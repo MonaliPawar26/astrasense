@@ -1,0 +1,8 @@
+rasterio
+numpy
+matplotlib
+sentinelsat
+requests
+shapely
+pyproj
+scipy
