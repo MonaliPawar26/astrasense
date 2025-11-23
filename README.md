@@ -111,6 +111,8 @@ The system operates via an automated, high-throughput pipeline:
 ## Main Dashboard View
 <img width="1359" height="607" alt="Image" src="https://github.com/user-attachments/assets/a1d7b69e-d38a-4684-88c8-4496428bf602" />
 ## AI Analysis Panel
+<img width="1352" height="588" alt="Image" src="https://github.com/user-attachments/assets/9329e725-bbf6-4202-897f-a3578ebffe09" />
+
 
 
 ### 🧪 Sample Risk Alert
