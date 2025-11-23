@@ -1,67 +1,152 @@
-# Sentinel-2 Satellite Analysis (NDVI, NDWI, Vegetation Risk Map)
 
-This project processes **Sentinel-2 L2A satellite imagery** to generate NDVI, NDWI, and a vegetation risk heatmap for environmental monitoring. The workflow is optimized to run efficiently on **Google Colab** with minimal RAM usage.
 
 ---
 
-## 📍 Area of Interest (AOI)
-Tested on a sample region located in **Delhi, India** using a defined bounding box.
+# 🛰️ ASTRASENSE
+
+## 🚨 AI-Powered Early Hazard & Environmental Risk Detection
+
+**Leveraging Multi-Modal Geospatial Data for Climate Resilience**
 
 ---
 
-## 🚀 Features
-- Automatic download of recent, cloud-free Sentinel-2 images
-- Extraction of essential spectral bands:
-  - **B08 (NIR)**
-  - **B04 (Red)**
-  - **B03 (Green)**
-- Computation of:
-  - **NDVI (Normalized Difference Vegetation Index)**
-  - **NDWI (Normalized Difference Water Index)**
-- Generation of a **Vegetation Risk Map**
-- Color-coded vegetation health visualization:
-  - 🟢 Healthy vegetation
-  - 🟡 Moderate vegetation
-  - 🔴 Stressed / low vegetation
+### Theme: **AI/ML for Space Data Interpretation**  
+Transforming Remote Sensing into Actionable Environmental Intelligence
+
+⚡ Real-Time Inference · Hybrid AI Modeling · Proactive Disaster Mitigation
 
 ---
 
-## 📊 Outputs
-The code generates the following images:
-- `ndvi.png`
-- `ndwi.png`
-- `risk_map.png`
+## 🚀 Overview
 
-These outputs help identify vegetation quality, water presence, and land condition.
+**ASTRASENSE** is an advanced AI-driven platform that converts vast streams of **multi-satellite imagery** into accurate, real-time environmental risk indices and early hazard warnings. Automating the entire geospatial analytics pipeline, it provides critical decision support for governments, disaster response agencies, and agricultural sectors.
 
----
-
-## 🧠 Why This Project Matters
-This workflow demonstrates real-world **remote sensing**, **GIS**, and **environmental analysis** techniques using open-source tools and real satellite data. It is ideal for:
-- Academic projects
-- Hackathons
-- Environmental monitoring tasks
-- Jury evaluations
+**Key Objectives:**
+- ⚠️ **Proactive Hazard Detection:** Early identification of floods, droughts, and environmental anomalies.
+- 🌾 **Agricultural Resilience:** Micro-localized alerts to minimize crop losses.
+- 🗺️ **Strategic Planning:** Supporting disaster response and climate resilience infrastructure.
+- 📈 **Operational Efficiency:** Reducing manual satellite data interpretation efforts.
 
 ---
 
-## 🛠️ Requirements
-- Python 3
-- Google Colab (recommended)
-- Libraries:
-  - rasterio
-  - numpy
-  - matplotlib
-  - sentinelsat
+## 🎯 Core Features
 
+### 🧠 Hybrid AI Engine
+- **Innovative Architecture:** Combines **CNN, LSTM, and Autoencoder** models for superior spatio-temporal analysis and anomaly detection.
 
-## 📥 How to Run
-1. Clone the repository
-2. Open the notebook or script in Google Colab
-3. Enter Copernicus API credentials
-4. Run all cells to generate NDVI, NDWI, and Risk Map
+### 🔗 Multi-Satellite Data Fusion
+- **Robust Integration:** Seamlessly fuses data from **MODIS, Sentinel, Landsat** to address cloud cover and data gaps.
+
+### 🗺️ Region-Specific Risk Modeling
+- **Localized Calibration:** Models adapt dynamically to diverse terrains and micro-climates, ensuring highly relevant risk predictions.
+
+### ⏱️ Automated End-to-End Pipeline
+- **Scalable Workflow:** Automates data ingestion, preprocessing, index computation (NDVI, NDWI, NDSI), and alert dissemination.
+
+### 🚨 Smart Risk Scoring System
+- **Predictive Analytics:** Quantifies hazard likelihood and severity for early warning rather than post-event detection.
 
 ---
 
-## 📄 License
-This project is open-source and free to use.
+## 🧩 Problem Statement
+
+### Addressing Climate Vulnerability through Space-Based Assets
+
+As climate events intensify, the need for reliable, rapid intelligence becomes urgent:
+- 🌊 **Floods:** Increasingly frequent and severe, causing economic and human losses.
+- 🏜️ **Droughts:** Threatening food security and rural livelihoods.
+- ☁️ **Data Latency & Cloud Cover:** Traditional monitoring is hampered by cloud contamination and manual analysis delays.
+
+**ASTRASENSE** bridges this gap, providing fast, explainable, scalable insights, transforming raw satellite data into life-saving decisions.
+
+---
+
+## 🧭 System Architecture & Workflow
+
+The system operates via an automated, high-throughput pipeline:
+
+1. **Data Ingestion:** Continuous acquisition from satellite sources.
+2. **Preprocessing & Indexing:** Cloud masking, geo-alignment, normalization, calculation of indices (NDWI, NDSI).
+3. **AI Analysis:** Hybrid AI models analyze multi-temporal, multi-spectral data for anomalies.
+4. **Risk Modeling:** Geospatial analytics generate a **Smart Risk Score** indicating hazard probability and severity.
+5. **Alerting & Distribution:** Real-time alerts via Dashboard, API, and SMS channels.
+
+---
+
+## 🧬 Tech Stack
+
+### 🧠 AI & Modeling
+- **Architecture:** Hybrid CNN-LSTM-Autoencoder
+- **Frameworks:** TensorFlow, Keras
+
+### 🛰️ Data & Geospatial Processing
+- **Sources:** MODIS, Sentinel, Landsat (Open & Free)
+- **Tools:** GDAL
+
+### 💻 Deployment & Infrastructure
+- **Language:** Python
+- **Deliverables:** Interactive Dashboard, REST API, SMS Notification Gateway
+
+---
+
+### 🧪 Sample Risk Alert
+
+```json
+{
+  "hazard_type": "Flood Risk",
+  "location_sector": "Ganga River Basin, Sub-region 4",
+  "risk_score": 8.5,
+  "prediction_confidence": 0.95,
+  "index_anomaly": "NDWI: +0.45 (Indicates high water content)",
+  "recommended_action": "High probability. Activate local contingency plans and issue evacuation advisories for low-lying areas."
+}
+```
+
+---
+
+## Development Workflow
+
+- **Data Pipeline:** Establishing automated multi-satellite data ingestion and fusion.
+- **Model Engineering:** Designing, training, and fine-tuning the Hybrid AI architecture.
+- **Risk Scoring:** Implementing and validating the Smart Risk Score.
+- **Deployment:** Building API endpoints, dashboards, and reliable notification systems.
+
+---
+
+## Use Cases
+
+- **Proactive Disaster Management:** Warnings issued up to 72 hours in advance.
+- **Precision Agriculture:** Localized drought and flood indices to optimize resource deployment.
+- **Infrastructure Safety:** Identifying environmental risks impacting infrastructure projects.
+- **Climate Policy:** Data-driven insights for regional climate resilience planning.
+
+---
+
+## 🔮 Future Enhancements
+
+- Integration of **ground sensors** and **IoT data** for enhanced ground-truth validation.
+- Advanced **Spatio-Temporal Graph Neural Networks** for complex hazard modeling.
+- Dynamic **cloud scaling** and **serverless deployment** for global reach.
+- User-defined **risk thresholds** and **custom alert zones**.
+
+---
+
+## 👤 Development Team
+
+**Team ShadowHack**  
+📧 monapawar0926@gmailcom 
+College: Hindi Seva Mandal Shri Sant Gadge Baba College of Engineering and Technology
+
+**Members:**
+- Monali Pawar
+- Pranjal Navgale
+- Pranav Patil
+- Nikhil Rathod
+- Janhavi Pawar
+
+---
+
+## 💚 ASTRASENSE — Transforming Satellite Data Into Life-Saving Environmental Intelligence
+
+---
+
