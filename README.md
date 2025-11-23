@@ -135,7 +135,7 @@ The system operates via an automated, high-throughput pipeline:
 
 **Team ShadowHack**  
 📧 monapawar0926@gmailcom 
-College: Hindi Seva Mandal Shri Sant Gadge Baba College of Engineering and Technology
+
 
 **Members:**
 - Monali Pawar
