@@ -106,6 +106,12 @@ The system operates via an automated, high-throughput pipeline:
 - **Version Control:** Git, GitHub
 
 ---
+# Dashboard Screenshots
+
+## Main Dashboard View
+<img width="1359" height="607" alt="Image" src="https://github.com/user-attachments/assets/a1d7b69e-d38a-4684-88c8-4496428bf602" />
+## AI Analysis Panel
+
 
 ### 🧪 Sample Risk Alert
 
